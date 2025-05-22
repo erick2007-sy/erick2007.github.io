@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo Social</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #1a1a1a;
+    }
+
+    nav {
+      background-color: #0b1f3a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #801336;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .submenu li a {
+      padding: 10px;
+      color: white;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #801336;
+    }
+
+    .contenido {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .texto {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+        .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.08);
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Trabajo Social</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <a href="#">Comunidad</a>
+        <ul class="submenu">
+          <li><a href="docentes.html">Docentes</a></li>
+          <li><a href="Administrativo.html">Administrativo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Especialidades</a>
+        <ul class="submenu">
+          <li><a href="Computacion.html">Computación</a></li>
+          <li><a href="trabajoSocial.html">Trabajo Social</a></li>
+          <li><a href="Contabilidad.html">Contabilidad</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Conócenos</a>
+        <ul class="submenu">
+          <li><a href="inscripciones.html">Inscripciones</a></li>
+          <li><a href="Acercadenosotros.html">Acerca de Nosotros</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Info</a>
+        <ul class="submenu">
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.google.com/maps" target="_blank">Ubicación</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="contenido">
+    <div class="texto">
+      <p>
+        La carrera de Trabajo Social se enfoca en promover el cambio, el desarrollo social, la cohesión y el empoderamiento de comunidades. Las funciones de un trabajador social incluyen orientar a personas y grupos, identificar problemas sociales y asesorar instituciones.
+      </p>
+    </div>
+    <div class="galeria">
+      <img src="docente1.jpg" alt="Docente 1">
+      <img src="docente2.jpg" alt="Docente 2">
+      <img src="docente3.jpg" alt="Docente 3">
+      <img src="docente4.jpg" alt="Docente 4">
+      <img src="docente5.jpg" alt="Docente 5">
+      <!-- Puedes agregar más imágenes aquí -->
+    </div>
+  </div>
+</body>
+</html>

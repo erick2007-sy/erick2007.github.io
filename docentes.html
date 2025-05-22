@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <a href="pagina-apys2.html" target="_blank"></a>
+  <title>Docentes</title>
+  <style>
+         body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #1a1a1a;
+    }
+
+    nav {
+      background-color: #0b1f3a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #801336;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .submenu li a {
+      padding: 10px;
+      color: white;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #801336;
+    }
+
+    .contenido {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .texto {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .semicirculo {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background-color: #001f3f;
+      border-top-left-radius: 100% 100%;
+      border-top-right-radius: 100% 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 90px;
+    }
+
+    .miembro {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 15px;
+      border: 4px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .miembro:hover {
+      transform: scale(1.3);
+      z-index: 10;
+    }
+
+    .nombre {
+      margin-top: 10px;
+      color: #000;
+      font-weight: bold;
+      display: none;
+    }
+
+    .miembro:hover + .nombre {
+      display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contenido {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .semicirculo {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Docentes</h1>
+
+ <nav>
+  <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="#">Comunidad</a>
+      <ul class="submenu">
+        <li><a href="docentes.html">Docentes</a></li>
+        <li><a href="Administrativo.html">Administrativo</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Especialidades</a>
+      <ul class="submenu">
+        <li><a href="Computacion.html">Computación</a></li>
+        <li><a href="trabajoSocial.html">Trabajo Social</a></li>
+        <li><a href="Contabilidad.html">Contabilidad</a></li>
+      </ul>
+    </li>
+    <li> 
+      <a href="#">Conócenos</a>
+      <ul class="submenu">
+        <li><a href="inscripciones.html">Inscripciones</a></li>
+        <li><a href="Acercadenosotros.html">Acerca de Nosotros</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Info</a>
+      <ul class="submenu">
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.google.com/maps" target="_blank">Ubicación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  <div class="contenido">
+    <div class="texto">
+      <p>
+        En nuestro centro educativo, los docentes son el pilar fundamental del aprendizaje. Cada profesor se dedica con pasión y compromiso a brindar una educación de calidad, adaptándose a las necesidades de cada estudiante. Nuestro personal docente está altamente capacitado en sus áreas, y se caracteriza por fomentar el respeto, la disciplina y el pensamiento crítico en el aula.
+      </p>
+    </div>
+
+   <section class="equipo">
+    <div class="semicirculo">
+      <div>
+        <div class="miembro"><img src="persona1.jpg" alt="Miembro 1" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="nombre">Ana</div>
+      </div>
+      <div>
+        <div class="miembro"><img src="persona2.jpg" alt="Miembro 2" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="nombre">Luis</div>
+      </div>
+      <div>
+        <div class="miembro"><img src="persona3.jpg" alt="Miembro 3" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="nombre">Sofía</div>
+      </div>
+          <div>
+        <div class="miembro"><img src="persona3.jpg" alt="Miembro 3" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="nombre">Sofía</div>
+      </div>
+          <div>
+        <div class="miembro"><img src="persona3.jpg" alt="Miembro 3" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="nombre">Sofía</div>
+      </div>
+  </section>
+
+
+
+</body>
+</html>
